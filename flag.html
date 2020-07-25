@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>National Flag of Bangladesh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+* {box-sizing: border-box;}
+h1 {
+  background: tomato;
+  color: white;
+  padding: 10px;
+}
+.moving {
+  animation: movingtext 10s infinite;
+}
+@keyframes movingtext {
+  from {}
+  to {transform: translateX(101%);}
+}
+.greenbox {
+  width: 600px;
+  height: 360px;
+  padding: 25px;
+  margin-top: 50px;
+  background-color: green;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .12);
+  animation: move .52s infinite alternate-reverse ease;
+}
+.circle {
+  width: 225px;
+  height: 225px;
+  background: red;
+  border-radius: 100%;
+  margin: 35px 0 0 100px;
+}
+.stick {
+  height: 600px;
+}
+@keyframes move {
+  from {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 150px;
+    }
+  to {
+    
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 20px;
+    }
+}
+.stick {
+  height: 600px;
+  width: 10px;
+  border: 1px solid lightgray;
+  background: gray;
+  float: left;
+}
+</style>
+</head>
+<body>
+<h1><div class="moving">Flag of Bangladesh</div></h1>
+<div class="stick"></div>
+<div class="greenbox">
+  <div class="circle"></div>
+</div>
+
+</body>
+</html>
